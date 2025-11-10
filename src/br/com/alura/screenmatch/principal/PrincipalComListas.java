@@ -5,6 +5,7 @@ import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -30,5 +31,8 @@ public class PrincipalComListas {
         }
         //lista.forEach(item -> System.out.println(item.getNome()));
         //lista.forEach(System.out::println);
+
+        Collections.sort(lista);
+        System.out.println("Títulos de filmes em ordem alfabética: " + lista);
     }
 }
