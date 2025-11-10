@@ -9,6 +9,7 @@ public class Titulo {
     private String genero;
     int duracao;
 
+    //construtor
     public Titulo(String nome, int anoDeLancamento) {
         this.nome = nome;
         this.anoDeLancamento = anoDeLancamento;
