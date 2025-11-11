@@ -6,6 +6,7 @@ import br.com.alura.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -33,6 +34,9 @@ public class PrincipalComListas {
         //lista.forEach(System.out::println);
 
         Collections.sort(lista);
-        System.out.println("Títulos de filmes em ordem alfabética: " + lista);
+        System.out.println("Títulos em ordem alfabética: " + lista);
+
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Titulos ordenados por ano: " + lista);
     }
 }
