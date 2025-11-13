@@ -7,6 +7,7 @@ import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -69,7 +70,7 @@ public class Main {
         //filme3.setAnoDeLancamento(2003); --> o ano está sendo passado no construtor
         filme3.avalia(10);
 
-        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        List<Filme> listaDeFilmes = new ArrayList<>();
         listaDeFilmes.add(meuFilme);
         listaDeFilmes.add(outroFilme);
         listaDeFilmes.add(filme3);
