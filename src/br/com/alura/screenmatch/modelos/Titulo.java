@@ -1,9 +1,12 @@
 package br.com.alura.screenmatch.modelos;
 
 import br.com.alura.screenmatch.excecoes.ErroDeConversaoDeAnoException;
+import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo> {
+    //@SerializedName("Title")
     private String nome;
+    //@SerializedName("Year")
     int anoDeLancamento;
     boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
@@ -25,7 +28,7 @@ public class Titulo implements Comparable<Titulo> {
                     + " por excesso de caracteres.");
         }
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
-        this.duracao = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
+        this.duracao = Integer.valueOf(meuTituloOmdb.runtime().substring(0,2));
         this.genero = meuTituloOmdb.genre();
     }
 
